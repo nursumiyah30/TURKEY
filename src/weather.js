@@ -8,6 +8,7 @@ const getWeatherConditions = async(city) => {
         console.log(data)
         
         let div = document.createElement("div");
+
         div.setAttribute("id", "conditions");
         let city = document.createElement("h2");
         let cityNode = document.createTextNode(data.name);
@@ -26,14 +27,29 @@ const getWeatherConditions = async(city) => {
         let descNode = document.createTextNode("\t"+data.weather[0].description);
         desc.appendChild(descNode);
 
-        let rise = document.createElement("div");
-        let riseNode = document.createTextNode("\t"+data.sys.sunrise);
-        rise.appendChild(riseNode);
+        let humidity = document.createElement("div");
+        let humiNode = document.createTextNode("\tHumidity : "+data.main.humidity + " %");
+        humidity.appendChild(humiNode);
+
+        let wind = document.createElement("div");
+        let windNode = document.createTextNode("\tWind Speed : "+data.wind.speed + " m/s");
+        wind.appendChild(windNode);
+
+        let tempmin = document.createElement("div");
+        let tempminNode = document.createTextNode("\tMinimum temperature : "+(data.main.temp_min - 273.15).toFixed(1) + " °C ");
+        tempmin.appendChild(tempminNode);
+
+        let tempmax = document.createElement("div");
+        let tempmaxNode = document.createTextNode("\tMaximum temperature : "+(data.main.temp_max - 273.15).toFixed(1) + " °C ");
+        tempmax.appendChild(tempmaxNode);
 
         div.appendChild(city);
         div.appendChild(temp);
         div.appendChild(desc);
-        div.appendChild(rise);
+        div.appendChild(humidity);
+        div.appendChild(wind);
+        div.appendChild(tempmin);
+        div.appendChild(tempmax);
         document.querySelector("main").appendChild(div);
     }).catch(err => console.log(err))
 }
