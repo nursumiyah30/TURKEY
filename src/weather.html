@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="weather.css">
+
+</head>
+<body>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="#">T U R K E Y</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+              <li><a href="index.html">HOME</a></li>
+              <li class="active"><a href="#">WEATHER</a></li>
+              <li><a href="meal.html">MEAL</a></li>
+          </ul>
+        </div>
+    </div>
+  </nav>
+
+  <div class="jumbotron">
+    <div class="container text-center">
+      <br>
+        <h1>WEATHER AT TURKEY</h1>      
+        <p>Check the weather in Turkey prior to embarking on your trip.</p>
+      <br>
+    </div>
+  </div>
+
+  <center>
+    <main>
+      <br>
+      <p>Select the name of a city to find out the weather conditions</p><br>
+    
+      <div class="weatherinput">
+        <form method="POST" id="weatherForm">
+          <br>
+          <select id="city">
+            <option type="text" id="city" value="Antalya">Antalya</option>
+            <option type="text" id="city" value="Istanbul">Istanbul</option>
+            <option type="text" id="city" value="yalova">Yalova</option>
+            <option type="text" id="city" value="marmara">Marmara</option>
+            <option type="text" id="city" value="cappadocia">Cappadocia</option>
+            <option type="text" id="city" value="adana">Adana</option>
+            <option type="text" id="city" value="adiyaman">Adiyaman</option>
+            <option type="text" id="city" value="pamukkale">Pamukkale</option>
+          </select>
+          <br><br>
+          <input id="postSubmit" type="submit" value="Submit" />
+        </form>
+        <br>
+      </div>
+
+    </main>
+  </center>
+
+  <br><br>
+
+  <footer class="container-fluid">
+    <center>
+      <a href="https://www.instagram.com/goturkiye/" class="fa fa-instagram"></a>
+      <a href="https://www.facebook.com/GoTurkiye" class="fa fa-facebook"></a>
+      <a href="https://twitter.com/goturkiye" class="fa fa-twitter"></a>
+      <a href="https://www.youtube.com/GoT%C3%BCrkiye" class="fa fa-youtube"></a>
+    </center>
+  </footer>
+ 
+  <script src="weather.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,78 @@
+body {
+    font-family: chirp;
+    font-weight: 500;
+    background-image: url('https://img.freepik.com/premium-vector/grid-geometric-seamless-pattern-vector-background-white-gray-texture_547648-1018.jpg');
+}
+
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+.navbar-brand {
+    font-family: 'Raleway',sans-serif; 
+    font-size: 25px; 
+    font-weight: 800; 
+}
+
+/* Add a gray background color and some padding to the footer */
+footer {
+    background-color: #f2f2f2;
+    padding: 25px;
+}
+
+.jumbotron {
+    padding: 10px;
+    background-image: url('https://img.freepik.com/premium-vector/grid-geometric-seamless-pattern-vector-background-white-gray-texture_547648-1018.jpg');
+    background-repeat: repeat;
+}
+
+h1 { 
+    color: #ffffff; 
+    font-family: 'Raleway',sans-serif; 
+    font-size: 62px; 
+    font-weight: 800; 
+    line-height: 72px; 
+    margin: 0 0 24px; 
+    text-align: center; 
+    text-transform: uppercase; 
+}
+
+.weatherinput {
+    width: 400px;
+    background-color: #d7c49eff;
+    color: black;
+    box-shadow: black;
+    border-radius: 30px;
+}
+
+main {
+    width: 500px;
+    color: white;
+    background-color: #343148ff;
+    border-radius: 30px;
+    padding-bottom: 10px;
+}
+
+/* Add a gray background color and some padding to the footer */
+footer {
+    padding: 25px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-image: url('https://img.freepik.com/premium-vector/grid-geometric-seamless-pattern-vector-background-white-gray-texture_547648-1018.jpg');
+    background-repeat: repeat;
+}
+
+.fa {
+    padding: 5px;
+    font-size: 40px;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    border-radius: 50%;
+    margin-left: 30px;
+    margin-right: 30px;
+}

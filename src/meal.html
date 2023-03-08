@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="meal.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">T U R K E Y</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="weather.html">WEATHER</a></li>
+        <li class="active"><a href="#">MEAL</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron">
+
+  <div class="container text-center">
+    <h1>OUR POPULAR DISH</h1>   
+    <p>Let's go into the details and recipes for these two meals!</p>   
+  </div>
+
+  <div class="gallery">
+    <figure>
+        <img src="https://www.simplyrecipes.com/thmb/0z1RvGGkybr3hb3vZmQ5c2p67bA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Mercimek-Corbasi-LEAD-8-c23057acf1e842689ece8bd0edba8f1c.jpg" width="100%">
+        <figcaption>Corba</figcaption>
+    </figure>
+    <figure>
+        <img src="https://idsb.tmgrup.com.tr/ly/uploads/images/2022/07/08/217551.jpg" width="100%">
+        <figcaption>Kumpir</figcaption>
+    </figure>
+  </div>
+</div>
+
+<div class="centered-search">
+  <div class="header-search">
+    <input type="text" id="keyword" class="header-title" placeholder="Type 'Corba' or 'Kumpir' and click on Enter Key...">
+  </div>
+</div>
+
+<div id="data" class="centered"></div>
+  
+<footer class="container-fluid">
+    <center>
+      <a href="https://www.instagram.com/goturkiye/" class="fa fa-instagram"></a>
+      <a href="https://www.facebook.com/GoTurkiye" class="fa fa-facebook"></a>
+      <a href="https://twitter.com/goturkiye" class="fa fa-twitter"></a>
+      <a href="https://www.youtube.com/GoT%C3%BCrkiye" class="fa fa-youtube"></a>
+    </center>
+  </footer>
+  <script src="meal.js"></script>
+</body>
+</html>
